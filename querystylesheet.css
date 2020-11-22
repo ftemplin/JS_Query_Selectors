@@ -27,7 +27,45 @@ footer, header {
 footer {height: 10vh;}
 header {height: 20vh;}
 
+main {
+	background-color: #f1f7eb;
+}
+
+input {
+	border: 4px solid #1B31A5;
+}
+
+/*p {
+	background-color: #fff;
+}*/
+
+.codebox {
+	width: 70%;
+    background-color: #fff;
+    padding: 4px 12px;
+    margin-left: 20px;
+    border-left: 8px solid #BF964B;
+}
+
 .pagetitle {
-font: 2em 'Lobster', cursive;
+font: 3em 'fontawesome' ;	
+/*font: 2em 'Lobster', cursive;*/
 font-weight: 900;
+}
+
+.subtitle {
+color: #1B31A5;
+font:'fontawesome';
+font-weight: 900;
+font-size: 150%;
+}
+
+.mainbody {
+	background-color: #64C164;
+}
+
+.inputdiv {
+	margin-left: 20PX;
+	margin-bottom: 10px;
+	
 }

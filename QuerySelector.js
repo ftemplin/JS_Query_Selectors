@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
 
 //CSS .class {}   #id {}, element combination could be .class #id a {}
 		// Getting an element by its id
@@ -24,4 +24,3 @@
 		var fname = document.querySelector(".fname")
 		fname.innerText = input.value + " good job"
 
-</script>
