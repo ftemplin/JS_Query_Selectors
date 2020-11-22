@@ -1,0 +1,33 @@
+/* This is the CSS file for the query selectors training and examples page */
+/*CSS .class {}   #id {}, element combination could be .class #id a {}*/
+/* ---------------------------------------------------------------------------------- */
+
+
+/* CSS for all elements unless specifically over written */
+* {
+	margin: 20;
+	padding: 10;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+
+    }
+
+footer, header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BF964B;
+    font-weight: normal;
+    background-color: #009900;
+    }
+
+footer {height: 10vh;}
+header {height: 20vh;}
+
+.pagetitle {
+font: 2em 'Lobster', cursive;
+font-weight: 900;
+}
