@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="JavaScript Query Selectors">
+	<meta name="keywords" content="JavaScript,Query Selectors">
+	<meta name="author" content="Fritz Templin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Query Selector</title>
+	<link rel="stylesheet" href="querystylesheet.css">
+</head>
+<body>
+	<header>
+		<h1 class="pagetitle">Working with Query Selectors</h1>
+	</header>
+	<div class="mainbody">
+		<h1>
+			Hello World, this is the Title<br>
+			<small>	Change me, too!</small>
+		</h1>
+	</div>
+<!-- h1 set up for referencing by id -->	
+	<h1 id="titleid">
+		Hello World, this is the Title by id<br>
+		<small>	Change me, too!</small>
+	</h1>
+<!-- h1 set up for referncing by class -->
+	<h1 class="titleclass" >
+		Hello World, this is the Title by Class<br>
+		<small>	Change me, too!</small>
+	</h1>
+<!-- h1 set up for referncing an element in a class -->
+	<h1 class="title" >
+		Hello World, this is the Title by Class<br>
+		<small> Change me, too!</small>
+	</h1>
+
+	<ul>
+		<li>number 1</li>
+		<li>number 2</li>
+		<li>number 3</li>
+		<li>number 4</li>
+		<li>number 5</li>
+		<li>number 6</li>
+	</ul>
+
+	<a href="#">Change Link Text</a><br><br>
+	<div>
+		<input type="text" placeholder="Full Name" style='padding: 10px; font-size: 14px;' class="form-control" value="Fritz Templin">
+	</div>
+
+	<h1 class="fname">Name goes here</h1>
+	<script type="text/javascript">
+		//CSS .class {}   #id {}, element combination could be .class #id a {}
+		// Getting an element by its id
+			var titleid = document.getElementById("titleid")
+			titleid.innerText = "Changed text by ID reference in JS"
+		// Getting an element by its Class
+			var titleclass = document.querySelector(".titleclass")
+			titleclass.innerText = "Changed text by Class reference in JS"
+		// Getting an element within the title Class
+			var title = document.querySelector(".title")
+			var small = title.querySelector("small")
+			small.innerText = "Changed text by class and element in JS"
+		// changing the link with just the element
+		var a = document.querySelector("a")
+		a.innerText = "Coding For Everybody.com" 
+		// changing all instances of an element
+		var lis = document.querySelectorAll("li")
+		lis[0].innerText = "This is First"
+		lis[4].innerText = "This is Fith"
+		lis[5].innerHTML = "<a href='www.DigiTellus.com'>DigiTellus</a>"
+		//QuerySelector for inputs
+		var input = document.querySelector(".form-control")
+		var fname = document.querySelector(".fname")
+		fname.innerText = input.value + " good job"
+
+
+		
+	</script>
+
+</body>
+</html>
